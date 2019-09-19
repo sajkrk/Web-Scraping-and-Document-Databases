@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+​
+<body>
+<!-- First div is a container for the title and scraper button -->
+	<div class="container">
+	
+		 <h1><b>Mission to Mars</b></h1>
+		 
+		 <table class="table">
+		 
+			<th colspan = "2"><h2>All about Mars</h2></th>
+			
+				<tr>
+					<td><strong><b>News Title</b></strong></td>
+					<td>{{ mars.news_title }}</td>
+					
+				</tr>
+				<tr>
+					<td><strong><b>News Paragraph</b></strong></td>
+					<td>{{ mars.news_p }}</td>
+				</tr>
+				<tr>
+					<td><strong><b>Featured Image</b></strong></td>
+					<td><img src = "{{ mars.featured_image_url }}" width="500px" alt="A full featured image of Mars"></td>
+				</tr>
+				<tr>
+					<td><strong><b>Facts</b></strong></td>
+					<td>{{ mars.facts_html|safe }}</td>
+				</tr>
+		 </table>
+		 
+		 <table class="table">
+			<tr>
+				<td><strong>{{ mars.hemisphere_image_url[0]['Title']}}</strong></td>
+				<td><strong><a>{{ mars.hemisphere_image_url[0]['url']}}</a></strong></td>
+			</tr
+			
+			<tr>
+				<td><strong>{{ mars.hemisphere_image_url[1]['Title'] }}</strong></td>
+				<td><strong><a>{{ mars.hemisphere_image_url[1]['url'] }}</a></strong></td>
+				
+			</tr>
+			
+			<tr>
+				<td><strong>{{ mars.hemisphere_image_url[2]['Title'] }}</strong></td>
+			
+				<td><strong><a>{{ mars.hemisphere_image_url[2]['url'] }}</a></strong></td>
+			
+			</tr>
+			
+			<tr>
+				<td><strong>{{ mars.hemisphere_image_url[3]['Title'] }}</strong></td>
+			
+				<td><strong><a>{{ mars.hemisphere_image_url[3]['url'] }}</a></strong></td>
+			
+			
+			
+			</tr>
+		 
+		 </table>
+		 
+	</div>
+</body>
+
+</html>
+
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
